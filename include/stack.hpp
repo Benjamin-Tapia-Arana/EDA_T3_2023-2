@@ -3,7 +3,7 @@
 #ifndef STACK_HPP_
 #define STACK_HPP_
 
-#include "node/node.hpp"
+#include "node.hpp"
 
 namespace stack{
     
@@ -12,7 +12,7 @@ class Stack{
         node::Node* head;
     public:
         Stack();
-        void push(int posX, int posY);
+        void push(char val);
         void push(node::Node* node);
         void pop();
         node::Node* top();

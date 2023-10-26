@@ -1,14 +1,14 @@
 // Código del libro Estructuras de Datos y Algoritmos (J. M. Saavedra)
 
-#include "linkedLists/stack.hpp"
-#include "node/node.hpp"
+#include "stack.hpp"
+#include "node.hpp"
 
 namespace stack{
 
 Stack::Stack(){head = nullptr;}
 
-void Stack::push(int posX, int posY){
-    node::Node* node = new node::Node(posX, posY);
+void Stack::push(char val){
+    node::Node* node = new node::Node(val);
     push(node);
 }
 
@@ -24,7 +24,7 @@ void Stack::pop(){
     if (!isEmpty()) {
         node::Node* ptr = head;
         head = head->getNext();
-        delete ptr;
+        // delete ptr;
     }
 }
 

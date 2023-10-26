@@ -1,43 +1,35 @@
 // Código del libro Estructuras de Datos y Algoritmos (J. M. Saavedra)
 
-#include "node/node.hpp" 
+#include "node.hpp" 
 #include <iostream>
 
 namespace node{
 
 Node::Node() {
-    posX = -1;
-    posY = -1;
+    data = '\0';
     ptrNext = nullptr;
 }
 
-Node::Node(int valX, int valY) {
-    posX = valX;
-    posY = valY;
+Node::Node(char val) {
+    data = val;
     ptrNext = nullptr;
 }
 
-Node::Node(int valX, int valY, Node* next) {
-    posX = valX;
-    posY = valY;
+Node::Node(char val, Node* next) {
+    data = val;
     ptrNext = next;
 }
 
-void Node::setData(int valX, int valY){
-    posX = valX;
-    posY = valY;
-}
+void Node::setData(char val) {data = val;}
 
-void Node::setNext(Node* next){ptrNext = next;}
+void Node::setNext(Node* next) {ptrNext = next;}
 
-int Node::getPosX(){return posX;}
+char Node::getData() {return data;}
 
-int Node::getPosY(){return posY;}
+Node* Node::getNext() {return ptrNext;}
 
-Node* Node::getNext(){return ptrNext;}
+void Node::print() {std::cout << '( ' << data << ' )';}
 
-void Node::print(){std::cout << '( ' << posX << ' , ' << posY << ' )';}
-
-Node::~Node(){}
+Node::~Node() {};
 
 }

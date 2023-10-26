@@ -7,17 +7,15 @@ namespace node{
 
 class Node{
 private:
-    int posX;
-    int posY;
+    char data;
     Node* ptrNext;
 public:
     Node();
-    Node(int posX, int posY);
-    Node(int posX, int posY, Node* next);
-    int getPosX();
-    int getPosY();
+    Node(char val);
+    Node(char val, Node* next);
+    char getData();
     Node* getNext();
-    void setData(int posX, int posY);
+    void setData(char val);
     void setNext(Node* next);
     void print();
     virtual ~Node();
