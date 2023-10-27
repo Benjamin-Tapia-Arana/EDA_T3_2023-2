@@ -5,31 +5,43 @@
 
 namespace node{
 
-Node::Node() {
+StringNode::StringNode() {
     data = '\0';
     ptrNext = nullptr;
 }
-
-Node::Node(char val) {
+StringNode::StringNode(std::string val) {
     data = val;
     ptrNext = nullptr;
 }
-
-Node::Node(char val, Node* next) {
+StringNode::StringNode(std::string val, StringNode* next) {
     data = val;
     ptrNext = next;
 }
+void StringNode::setData(std::string val) {data = val;}
+void StringNode::setNext(StringNode* next) {ptrNext = next;}
+std::string StringNode::getData() {return data;}
+StringNode* StringNode::getNext() {return ptrNext;}
+void StringNode::print() {std::cout << "( " << data << " )";}
+StringNode::~StringNode() {};
 
-void Node::setData(char val) {data = val;}
 
-void Node::setNext(Node* next) {ptrNext = next;}
-
-char Node::getData() {return data;}
-
-Node* Node::getNext() {return ptrNext;}
-
-void Node::print() {std::cout << '( ' << data << ' )';}
-
-Node::~Node() {};
+FloatNode::FloatNode() {
+    data = '\0';
+    ptrNext = nullptr;
+}
+FloatNode::FloatNode(long double val) {
+    data = val;
+    ptrNext = nullptr;
+}
+FloatNode::FloatNode(long double val, FloatNode* next) {
+    data = val;
+    ptrNext = next;
+}
+void FloatNode::setData(long double val) {data = val;}
+void FloatNode::setNext(FloatNode* next) {ptrNext = next;}
+long double FloatNode::getData() {return data;}
+FloatNode* FloatNode::getNext() {return ptrNext;}
+void FloatNode::print() {std::cout << "( " << data << " )";}
+FloatNode::~FloatNode() {};
 
 }

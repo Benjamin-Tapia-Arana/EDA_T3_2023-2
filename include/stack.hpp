@@ -4,21 +4,36 @@
 #define STACK_HPP_
 
 #include "node.hpp"
+#include <string>
 
 namespace stack{
     
-class Stack{
+class StringStack{
     private:
-        node::Node* head;
+        node::StringNode* head;
     public:
-        Stack();
-        void push(char val);
-        void push(node::Node* node);
+        StringStack();
+        void push(std::string val);
+        void push(node::StringNode* node);
         void pop();
-        node::Node* top();
+        node::StringNode* top();
         bool isEmpty();
         void clear();
-        virtual ~Stack();
+        virtual ~StringStack();
+};
+
+class FloatStack{
+    private:
+        node::FloatNode* head;
+    public:
+        FloatStack();
+        void push(long double val);
+        void push(node::FloatNode* node);
+        void pop();
+        node::FloatNode* top();
+        bool isEmpty();
+        void clear();
+        virtual ~FloatStack();
 };
 
 }
