@@ -129,6 +129,30 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+src/calculator.o: src/calculator.cpp.o
+.PHONY : src/calculator.o
+
+# target to build an object file
+src/calculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/calculator.cpp.o
+.PHONY : src/calculator.cpp.o
+
+src/calculator.i: src/calculator.cpp.i
+.PHONY : src/calculator.i
+
+# target to preprocess a source file
+src/calculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/calculator.cpp.i
+.PHONY : src/calculator.cpp.i
+
+src/calculator.s: src/calculator.cpp.s
+.PHONY : src/calculator.s
+
+# target to generate assembly for a file
+src/calculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/calculator.cpp.s
+.PHONY : src/calculator.cpp.s
+
 src/node.o: src/node.cpp.o
 .PHONY : src/node.o
 
@@ -234,6 +258,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... src/calculator.o"
+	@echo "... src/calculator.i"
+	@echo "... src/calculator.s"
 	@echo "... src/node.o"
 	@echo "... src/node.i"
 	@echo "... src/node.s"
