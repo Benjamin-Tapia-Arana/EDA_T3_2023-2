@@ -83,10 +83,24 @@ CMakeFiles/test.dir/test/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/test/test.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benja/EDA_T3_2023-2/test/test.cpp -o CMakeFiles/test.dir/test/test.cpp.s
 
+CMakeFiles/test.dir/src/calculator.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/calculator.cpp.o: ../src/calculator.cpp
+CMakeFiles/test.dir/src/calculator.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/calculator.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/calculator.cpp.o -MF CMakeFiles/test.dir/src/calculator.cpp.o.d -o CMakeFiles/test.dir/src/calculator.cpp.o -c /home/benja/EDA_T3_2023-2/src/calculator.cpp
+
+CMakeFiles/test.dir/src/calculator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/calculator.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benja/EDA_T3_2023-2/src/calculator.cpp > CMakeFiles/test.dir/src/calculator.cpp.i
+
+CMakeFiles/test.dir/src/calculator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/calculator.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benja/EDA_T3_2023-2/src/calculator.cpp -o CMakeFiles/test.dir/src/calculator.cpp.s
+
 CMakeFiles/test.dir/src/utils.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/utils.cpp.o: ../src/utils.cpp
 CMakeFiles/test.dir/src/utils.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/utils.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/utils.cpp.o -MF CMakeFiles/test.dir/src/utils.cpp.o.d -o CMakeFiles/test.dir/src/utils.cpp.o -c /home/benja/EDA_T3_2023-2/src/utils.cpp
 
 CMakeFiles/test.dir/src/utils.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/test.dir/src/utils.cpp.s: cmake_force
 CMakeFiles/test.dir/src/stack.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/stack.cpp.o: ../src/stack.cpp
 CMakeFiles/test.dir/src/stack.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/stack.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/src/stack.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/stack.cpp.o -MF CMakeFiles/test.dir/src/stack.cpp.o.d -o CMakeFiles/test.dir/src/stack.cpp.o -c /home/benja/EDA_T3_2023-2/src/stack.cpp
 
 CMakeFiles/test.dir/src/stack.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/test.dir/src/stack.cpp.s: cmake_force
 CMakeFiles/test.dir/src/node.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/node.cpp.o: ../src/node.cpp
 CMakeFiles/test.dir/src/node.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/src/node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/src/node.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/node.cpp.o -MF CMakeFiles/test.dir/src/node.cpp.o.d -o CMakeFiles/test.dir/src/node.cpp.o -c /home/benja/EDA_T3_2023-2/src/node.cpp
 
 CMakeFiles/test.dir/src/node.cpp.i: cmake_force
@@ -128,6 +142,7 @@ CMakeFiles/test.dir/src/node.cpp.s: cmake_force
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/test/test.cpp.o" \
+"CMakeFiles/test.dir/src/calculator.cpp.o" \
 "CMakeFiles/test.dir/src/utils.cpp.o" \
 "CMakeFiles/test.dir/src/stack.cpp.o" \
 "CMakeFiles/test.dir/src/node.cpp.o"
@@ -136,12 +151,13 @@ test_OBJECTS = \
 test_EXTERNAL_OBJECTS =
 
 test: CMakeFiles/test.dir/test/test.cpp.o
+test: CMakeFiles/test.dir/src/calculator.cpp.o
 test: CMakeFiles/test.dir/src/utils.cpp.o
 test: CMakeFiles/test.dir/src/stack.cpp.o
 test: CMakeFiles/test.dir/src/node.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
