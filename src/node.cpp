@@ -3,7 +3,7 @@
 #include "node.hpp" 
 #include <iostream>
 
-namespace node{
+namespace node {
 
 StringNode::StringNode() {
     data = '\0';

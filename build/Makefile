@@ -153,6 +153,30 @@ src/calculator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/calculator.cpp.s
 .PHONY : src/calculator.cpp.s
 
+src/interactiveIO.o: src/interactiveIO.cpp.o
+.PHONY : src/interactiveIO.o
+
+# target to build an object file
+src/interactiveIO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/interactiveIO.cpp.o
+.PHONY : src/interactiveIO.cpp.o
+
+src/interactiveIO.i: src/interactiveIO.cpp.i
+.PHONY : src/interactiveIO.i
+
+# target to preprocess a source file
+src/interactiveIO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/interactiveIO.cpp.i
+.PHONY : src/interactiveIO.cpp.i
+
+src/interactiveIO.s: src/interactiveIO.cpp.s
+.PHONY : src/interactiveIO.s
+
+# target to generate assembly for a file
+src/interactiveIO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/interactiveIO.cpp.s
+.PHONY : src/interactiveIO.cpp.s
+
 src/node.o: src/node.cpp.o
 .PHONY : src/node.o
 
@@ -261,6 +285,9 @@ help:
 	@echo "... src/calculator.o"
 	@echo "... src/calculator.i"
 	@echo "... src/calculator.s"
+	@echo "... src/interactiveIO.o"
+	@echo "... src/interactiveIO.i"
+	@echo "... src/interactiveIO.s"
 	@echo "... src/node.o"
 	@echo "... src/node.i"
 	@echo "... src/node.s"
