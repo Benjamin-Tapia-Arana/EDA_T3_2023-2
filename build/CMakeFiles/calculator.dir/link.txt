@@ -1,0 +1,1 @@
+/usr/bin/g++ CMakeFiles/calculator.dir/test/test.cpp.o CMakeFiles/calculator.dir/src/interactiveIO.cpp.o CMakeFiles/calculator.dir/src/calculator.cpp.o CMakeFiles/calculator.dir/src/utils.cpp.o CMakeFiles/calculator.dir/src/stack.cpp.o CMakeFiles/calculator.dir/src/node.cpp.o -o calculator 

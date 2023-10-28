@@ -27,16 +27,22 @@ int interactiveIO() {
         std::cout << "\n  ans = " << dict.data["ans"] << std::endl;
 
         if (showVars) {
+
+            bool empty = true;
             
             std::cout << "\nVariables:\n" << std::endl;
             for (const auto& pair : dict.data) {
-                std::cout << "  " << pair.first << " = " << pair.second << std::endl;
+                if (pair.first != "ans") {
+                    std::cout << "  " << pair.first << " = " << pair.second << std::endl;
+                    empty = false;
+                }
             }
+            if (empty) std::cout << "  None" << std::endl;
             showVars = false; 
         }
 
         std::cout << "\n|-> ";
-        std::cin >> instructions;
+        std::getline(std::cin, instructions);
         size_t variableAssign = instructions.find("=");
         if (instructions == "exit") {
             system("clear");
@@ -58,6 +64,7 @@ int interactiveIO() {
             utils::removeEmptySpaces(&instructions);
             utils::infixToPostfix(&instructions);
             std::cout << instructions << std::endl;
+            utils::varToVal(&instructions, dict);
             long double solvedExpression = calculator::postfixCalculator(instructions);
             std::cout << solvedExpression << std::endl;
             dict.data["ans"] = solvedExpression;
