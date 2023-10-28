@@ -1,6 +1,7 @@
 #include "utils.hpp"
 #include "stack.hpp"
 #include "node.hpp"
+#include "dictionary.hpp"
 #include <string>
 #include <algorithm>
 #include <cctype>
@@ -91,6 +92,27 @@ void removeEmptySpaces(std::string *input) {
         input->end(),
         [](char c) {return std::isspace(c);}),
         input->end());
+}
+
+void varToVal(std::string *postfixExpression, struct dictionary::Dictionary dict) {
+    std::string expression = *postfixExpression;
+    std::string variable; 
+    long double value;
+    for (int i = 0; i < expression.length(); i += 2) {
+        if (expression[i] == '+' || expression[i] == '-' || expression[i] == '*' || expression[i] == '/' || expression[i] == '^') continue;
+        else {
+            for (const auto& pair : dict.data) {
+                variable = pair.first;
+                std::cout << "Val: " << variable << std::endl;
+                value = pair.second;
+                std::cout << "Var: " << value << std::endl;
+                std::cout << "Act: " << expression.substr(i, variable.length()) << std::endl << std::endl;
+                if (expression.substr(i, variable.length()) == variable) expression.replace(i, variable.length(), std::to_string(value));
+                while (expression[i + 1] != ' ') i++;
+            }
+        }
+    }
+    *postfixExpression = expression;
 }
 
 }
