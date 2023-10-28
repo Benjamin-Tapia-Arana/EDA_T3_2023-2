@@ -20,7 +20,7 @@ int interactiveIO() {
 
         std::string instructions;
 
-        system("clear");
+        // system("clear");
         std::cout << "\n - Type an expression or a variable assignment to begin" << std::endl;
         std::cout << " - Type 'vars' to see all assigned variables" << std::endl;
         std::cout << " - Type 'exit' to exit the program" << std::endl;
@@ -54,6 +54,7 @@ int interactiveIO() {
         else if (variableAssign != std::string::npos) {
             if (instructions != "ans" && instructions != "vars" && instructions != "exit") {
                 utils::removeEmptySpaces(&instructions);
+                size_t variableAssign = instructions.find("=");
                 std::string variableName = instructions.substr(0, variableAssign);
                 int intExpression = utils::strToInt(instructions.substr(variableAssign + 1, instructions.length() - variableAssign - 1));
                 long double floatExpression = intExpression;
