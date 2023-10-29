@@ -40,7 +40,29 @@ public:
     virtual ~FloatNode();
 };
 
-}
+class TreeNode{
+private:
+    std::string data;
+    int level;
+    TreeNode* ptrPrev;
+    TreeNode* ptrNext;
+public:
+    TreeNode(int lvl);
+    TreeNode(int lvl, std::string val);
+    TreeNode(int lvl, std::string val, TreeNode* prev);
+    TreeNode(int lvl, std::string val, TreeNode* prev, TreeNode* next);
+    std::string getData();
+    int getLevel();
+    TreeNode* getPrev();
+    TreeNode* getNext();
+    void setData(std::string val);
+    void setPrev(TreeNode* prev);
+    void setNext(TreeNode* next);
+    void setLevel(int lvl);
+    void print();
+    virtual ~TreeNode();
+};
 
+}
 
 #endif

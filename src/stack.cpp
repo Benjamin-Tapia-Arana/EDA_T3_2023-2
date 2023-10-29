@@ -22,7 +22,7 @@ void StringStack::pop(){
     if (!isEmpty()) {
         node::StringNode* ptr = head;
         head = head->getNext();
-        // delete ptr;
+        // if (head != nullptr) delete ptr;
     }
 }
 node::StringNode* StringStack::top() {return head;}
@@ -47,7 +47,7 @@ void FloatStack::pop() {
     if (!isEmpty()) {
         node::FloatNode* ptr = head;
         head = head->getNext();
-        // delete ptr;
+        // if (head != nullptr) delete ptr;
     }
 }
 node::FloatNode* FloatStack::top() {return head;}

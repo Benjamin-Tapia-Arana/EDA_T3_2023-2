@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/calculator.dir/src/node.cpp.o.d"
   "CMakeFiles/calculator.dir/src/stack.cpp.o"
   "CMakeFiles/calculator.dir/src/stack.cpp.o.d"
+  "CMakeFiles/calculator.dir/src/tree.cpp.o"
+  "CMakeFiles/calculator.dir/src/tree.cpp.o.d"
   "CMakeFiles/calculator.dir/src/utils.cpp.o"
   "CMakeFiles/calculator.dir/src/utils.cpp.o.d"
   "CMakeFiles/calculator.dir/test/test.cpp.o"

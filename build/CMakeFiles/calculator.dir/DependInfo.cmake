@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/benja/EDA_T3_2023-2/src/interactiveIO.cpp" "CMakeFiles/calculator.dir/src/interactiveIO.cpp.o" "gcc" "CMakeFiles/calculator.dir/src/interactiveIO.cpp.o.d"
   "/home/benja/EDA_T3_2023-2/src/node.cpp" "CMakeFiles/calculator.dir/src/node.cpp.o" "gcc" "CMakeFiles/calculator.dir/src/node.cpp.o.d"
   "/home/benja/EDA_T3_2023-2/src/stack.cpp" "CMakeFiles/calculator.dir/src/stack.cpp.o" "gcc" "CMakeFiles/calculator.dir/src/stack.cpp.o.d"
+  "/home/benja/EDA_T3_2023-2/src/tree.cpp" "CMakeFiles/calculator.dir/src/tree.cpp.o" "gcc" "CMakeFiles/calculator.dir/src/tree.cpp.o.d"
   "/home/benja/EDA_T3_2023-2/src/utils.cpp" "CMakeFiles/calculator.dir/src/utils.cpp.o" "gcc" "CMakeFiles/calculator.dir/src/utils.cpp.o.d"
   "/home/benja/EDA_T3_2023-2/test/test.cpp" "CMakeFiles/calculator.dir/test/test.cpp.o" "gcc" "CMakeFiles/calculator.dir/test/test.cpp.o.d"
   )
