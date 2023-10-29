@@ -76,14 +76,8 @@ void infixToPostfix(std::string *expression) {
 }
 
 int strToInt(std::string number) {
-    try {
-        int integer = std::stoi(number);
-        return integer;
-    }
-    catch (const std::exception& error) {
-        std::cerr << "\nInvalid argument: " << number << " (used as zero)" << std::endl << std::endl;
-        return 0;
-    }
+    int integer = std::stoi(number);
+    return integer;
 }
 
 void removeEmptySpaces(std::string *input) {

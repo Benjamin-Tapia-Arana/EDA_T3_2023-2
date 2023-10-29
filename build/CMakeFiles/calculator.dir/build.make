@@ -125,10 +125,24 @@ CMakeFiles/calculator.dir/src/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/src/utils.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benja/EDA_T3_2023-2/src/utils.cpp -o CMakeFiles/calculator.dir/src/utils.cpp.s
 
+CMakeFiles/calculator.dir/src/tree.cpp.o: CMakeFiles/calculator.dir/flags.make
+CMakeFiles/calculator.dir/src/tree.cpp.o: ../src/tree.cpp
+CMakeFiles/calculator.dir/src/tree.cpp.o: CMakeFiles/calculator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/calculator.dir/src/tree.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/src/tree.cpp.o -MF CMakeFiles/calculator.dir/src/tree.cpp.o.d -o CMakeFiles/calculator.dir/src/tree.cpp.o -c /home/benja/EDA_T3_2023-2/src/tree.cpp
+
+CMakeFiles/calculator.dir/src/tree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calculator.dir/src/tree.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benja/EDA_T3_2023-2/src/tree.cpp > CMakeFiles/calculator.dir/src/tree.cpp.i
+
+CMakeFiles/calculator.dir/src/tree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/src/tree.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benja/EDA_T3_2023-2/src/tree.cpp -o CMakeFiles/calculator.dir/src/tree.cpp.s
+
 CMakeFiles/calculator.dir/src/stack.cpp.o: CMakeFiles/calculator.dir/flags.make
 CMakeFiles/calculator.dir/src/stack.cpp.o: ../src/stack.cpp
 CMakeFiles/calculator.dir/src/stack.cpp.o: CMakeFiles/calculator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/calculator.dir/src/stack.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/calculator.dir/src/stack.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/src/stack.cpp.o -MF CMakeFiles/calculator.dir/src/stack.cpp.o.d -o CMakeFiles/calculator.dir/src/stack.cpp.o -c /home/benja/EDA_T3_2023-2/src/stack.cpp
 
 CMakeFiles/calculator.dir/src/stack.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/calculator.dir/src/stack.cpp.s: cmake_force
 CMakeFiles/calculator.dir/src/node.cpp.o: CMakeFiles/calculator.dir/flags.make
 CMakeFiles/calculator.dir/src/node.cpp.o: ../src/node.cpp
 CMakeFiles/calculator.dir/src/node.cpp.o: CMakeFiles/calculator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/calculator.dir/src/node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/calculator.dir/src/node.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/src/node.cpp.o -MF CMakeFiles/calculator.dir/src/node.cpp.o.d -o CMakeFiles/calculator.dir/src/node.cpp.o -c /home/benja/EDA_T3_2023-2/src/node.cpp
 
 CMakeFiles/calculator.dir/src/node.cpp.i: cmake_force
@@ -159,6 +173,7 @@ calculator_OBJECTS = \
 "CMakeFiles/calculator.dir/src/interactiveIO.cpp.o" \
 "CMakeFiles/calculator.dir/src/calculator.cpp.o" \
 "CMakeFiles/calculator.dir/src/utils.cpp.o" \
+"CMakeFiles/calculator.dir/src/tree.cpp.o" \
 "CMakeFiles/calculator.dir/src/stack.cpp.o" \
 "CMakeFiles/calculator.dir/src/node.cpp.o"
 
@@ -169,11 +184,12 @@ calculator: CMakeFiles/calculator.dir/test/test.cpp.o
 calculator: CMakeFiles/calculator.dir/src/interactiveIO.cpp.o
 calculator: CMakeFiles/calculator.dir/src/calculator.cpp.o
 calculator: CMakeFiles/calculator.dir/src/utils.cpp.o
+calculator: CMakeFiles/calculator.dir/src/tree.cpp.o
 calculator: CMakeFiles/calculator.dir/src/stack.cpp.o
 calculator: CMakeFiles/calculator.dir/src/node.cpp.o
 calculator: CMakeFiles/calculator.dir/build.make
 calculator: CMakeFiles/calculator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable calculator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/benja/EDA_T3_2023-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable calculator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/calculator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

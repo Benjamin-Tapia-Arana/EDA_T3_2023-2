@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 #add_subdirectory(src)
 #add_subdirectory(tests)
 
-add_executable(calculator test/test.cpp src/interactiveIO.cpp src/calculator.cpp src/utils.cpp src/stack.cpp src/node.cpp)
+add_executable(calculator test/test.cpp src/interactiveIO.cpp src/calculator.cpp src/utils.cpp src/tree.cpp src/stack.cpp src/node.cpp)
 target_include_directories(calculator PUBLIC ${PROJECT_SOURCE_DIR}/include)
 
 
