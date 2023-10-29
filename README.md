@@ -36,6 +36,8 @@ El programa te mostrará un menú con las opciones disponibles:
 
  - Type an expression or a variable assignment to begin
  - Type 'vars' to see all assigned variables
- - Type 'exit' to exit the program
  - Type 'tree' to see the decision tree of the postfix expression
  - Type 'vars + tree' to see both
+ - Type 'exit' to exit the program
+
+Para ingresar una expresión, debes ingresarla en notación infija, por ejemplo: `2 + 2`. El programa guardara el resultado de la expresión en la variable `ans` y lo mostrará por pantalla (solo para la úlima expresión ingresada). También puedes asignar un valor a una variable, por ejemplo: `a = 2`. Para ver todas las variables asignadas, debes ingresar `vars`. Para ver el árbol de decisión de la expresión ingresada, debes ingresar `tree`. Para ver ambas cosas, debes ingresar `vars + tree`. Para salir del programa, debes ingresar `exit`.

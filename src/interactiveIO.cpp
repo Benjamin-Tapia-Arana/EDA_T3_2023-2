@@ -26,9 +26,9 @@ int interactiveIO() {
         system("clear");
         std::cout << "\n - Type an expression or a variable assignment to begin" << std::endl;
         std::cout << " - Type 'vars' to see all assigned variables" << std::endl;
-        std::cout << " - Type 'exit' to exit the program" << std::endl;
         std::cout << " - Type 'tree' to see the decision tree of the postfix expression" << std::endl;
-        std::cout << " - Type 'vars + tree' to see both\n" << std::endl;
+        std::cout << " - Type 'vars + tree' to see both" << std::endl;
+        std::cout << " - Type 'exit' to exit the program\n" << std::endl;
         std::cout << "\n  ans = " << dict.data["ans"] << std::endl;
 
         if (showVars) {
