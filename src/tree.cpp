@@ -42,7 +42,7 @@ void Tree::insertLast(int lvl, std::string val){
     insertLast(node);
 }
 
-void Tree::removeFirst(){
+void Tree::pop(){
     if (!isEmpty()) {
         node::TreeNode* ptr = head;
         head = head->getPrev();
@@ -50,17 +50,7 @@ void Tree::removeFirst(){
     }
 }
 
-void Tree::removeLast(){
-    if (!isEmpty()) {
-        node::TreeNode* ptr = tail;
-        tail = head->getNext();
-        if (tail != nullptr) delete ptr;
-    }
-}
-
 node::TreeNode* Tree::top() {return head;}
-
-node::TreeNode* Tree::bottom() {return tail;}
 
 void Tree::print(){
 
@@ -110,7 +100,7 @@ void Tree::print(){
 
 bool Tree::isEmpty() {return head == nullptr;}
 
-void Tree::clear() {while(!isEmpty()) removeFirst();}
+void Tree::clear() {while(!isEmpty()) pop();}
 
 Tree::~Tree() {clear();}
 

@@ -75,7 +75,6 @@ void TreeNode::setNext(TreeNode* next) {ptrNext = next;}
 std::string TreeNode::getData() {return data;}
 int TreeNode::getLevel() {return level;}
 TreeNode* TreeNode::getPrev() {return ptrPrev;}
-TreeNode* TreeNode::getNext() {return ptrNext;}
 void TreeNode::setLevel(int lvl) {level = lvl;}
 void TreeNode::print() {std::cout << "( " << data << " )";}
 TreeNode::~TreeNode() {};

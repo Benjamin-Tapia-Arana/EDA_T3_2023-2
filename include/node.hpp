@@ -54,7 +54,6 @@ public:
     std::string getData();
     int getLevel();
     TreeNode* getPrev();
-    TreeNode* getNext();
     void setData(std::string val);
     void setPrev(TreeNode* prev);
     void setNext(TreeNode* next);

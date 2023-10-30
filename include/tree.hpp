@@ -16,10 +16,8 @@ class Tree{
         void insertFirst(node::TreeNode* node);
         void insertLast(int lvl, std::string val);
         void insertLast(node::TreeNode* node);
-        void removeFirst();
-        void removeLast();
+        void pop();
         node::TreeNode* top();
-        node::TreeNode* bottom();
         void print();
         bool isEmpty();
         void clear();
